@@ -1,0 +1,137 @@
+body {
+    font-family: helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: seashell;
+   
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: lightpink;
+    border-radius: 10px;
+  }
+
+header {
+    background-color: lightpink;
+    color: black; /*gm rxt*/
+    padding: 20px;
+    text-align: center;
+}
+header h1{
+	font-family: Tahoma;
+	text-align: center;
+	font-size: 40pt;
+	margin: 0;
+}
+
+h2{
+    font-family: helvetica;
+    font-size: 17pt;
+    color: black;
+
+}
+h3{
+    font-family: helvetica;
+    color: black;
+}
+h4{
+    font-family: helvetica;
+    color: hotpink;
+
+}
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: hotpink;
+  font-size: large;
+}
+
+
+a {
+    color: white; 
+    text-decoration: none; /* Remove underline from links */
+}
+a:hover {
+    color: black; 
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /*hapus klo undo*/
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: black;
+}
+
+/* Combine button styles */
+.button {
+    font-size: large;
+    color: #fff;
+    background-color: hotpink;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Adjusted padding */
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: pink;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.picture-row {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    flex-wrap: wrap; 
+}
+.picture-row img {
+    margin: 10px; /* add null if undo */
+    max-width: 100px; /* set to 200 if undo */
+    height: auto;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    
+    .picture-row {
+        flex-direction: row; 
+        align-items: center;
+    }
+    .picture-row img {
+        max-width: 30%; 
+        margin: 10px 0; 
+    }
+}
